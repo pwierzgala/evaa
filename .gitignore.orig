@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+.idea/
+*.pyc
+__pycache__/
+=======
+*.o
+*.elf
+*.hex
+.vscode
+>>>>>>> develop

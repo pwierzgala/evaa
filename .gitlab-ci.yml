@@ -1,0 +1,78 @@
+image: acihy/evaa-docker:0.6-arm
+
+variables:
+  GIT_CLONE_PATH: $CI_BUILDS_DIR/$CI_CONCURRENT_ID/evaa
+  SLAVE_FIRMWARE_PATH: $CI_BUILDS_DIR/$CI_CONCURRENT_ID/evaa/source_code/slave
+  MASTER_FIRMWARE_PATH: $CI_BUILDS_DIR/$CI_CONCURRENT_ID/evaa/source_code/master
+  INTEGRATION_TESTS_PATH: $CI_BUILDS_DIR/$CI_CONCURRENT_ID/evaa/tests
+  SLAVE_BAUDRATE: 115200
+
+stages:
+  - build_slave
+  - build_master
+  - test_master
+  - flash_slave
+  - integration_tests
+
+build_slave:
+  stage: build_slave
+  only:
+  - master
+  - develop
+  script:
+    - cd $SLAVE_FIRMWARE_PATH/atmega328p
+    - make
+  artifacts:
+    name: "{$CI_JOB_NAME}${CI_COMMIT_SHORT_SHA}"
+    paths:
+      - $SLAVE_FIRMWARE_PATH/atmega328p/build/main.hex
+      - $SLAVE_FIRMWARE_PATH/atmega328p/build/main.elf
+
+#build_master:
+#  stage: build_master
+#  only:
+#  - master
+#  - develop
+#  script:
+#    - cd $MASTER_FIRMWARE_PATH/rpi/evaa_cpp_app
+#    - make
+#  artifacts:
+#    name: "{$CI_JOB_NAME}${CI_COMMIT_SHORT_SHA}"
+#    paths:
+#      - $MASTER_FIRMWARE_PATH/rpi/evaa_cpp_app/build/*.so
+#      - $MASTER_FIRMWARE_PATH/rpi/rest_api_app/*
+#      - $MASTER_FIRMWARE_PATH/rpi/grafana_conf/*
+
+test_master:
+  stage: test_master
+  only:
+  - master
+  - develop
+  script:
+    - cd $MASTER_FIRMWARE_PATH/rpi/rest_api_app
+    - pip3 install -r requirements.txt --user
+    - python3 *_test.py -v
+
+flash_slave:
+  stage: flash_slave
+  only:
+  - master
+  - develop
+  script:
+    - cd $SLAVE_FIRMWARE_PATH/atmega328p
+    - make flash BAUDRATE=${SLAVE_BAUDRATE}
+
+integration_tests:
+  stage: integration_tests
+  only:
+  - master
+  - develop
+  script:
+    - cd $INTEGRATION_TESTS_PATH
+    - $INTEGRATION_TESTS_PATH/execute_tests.sh
+  artifacts:
+    name: "{$CI_JOB_NAME}${CI_COMMIT_SHORT_SHA}"
+    when: always
+    paths:
+      - $INTEGRATION_TESTS_PATH/*.xml
+      - $INTEGRATION_TESTS_PATH/*.html

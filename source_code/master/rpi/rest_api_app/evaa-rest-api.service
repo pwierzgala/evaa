@@ -1,0 +1,23 @@
+[Unit]
+Description=EVAA REST API instance
+Documentation=https://gitlab.com/plczapiewski/evaa/wikis/home
+Wants=network-online.target postgresql.service
+After=network-online.target postgresql.service
+
+[Service]
+EnvironmentFile=/etc/default/grafana-server
+User=root
+Group=root
+Type=simple
+Restart=on-failure
+WorkingDirectory=/opt/evaa-rest-api
+RuntimeDirectory=evaa-rest-api
+RuntimeDirectoryMode=0750
+ExecStart=/usr/bin/python3 /opt/evaa-rest-api/flask-rest-api-app.py
+
+LimitNOFILE=10000
+TimeoutStopSec=20
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

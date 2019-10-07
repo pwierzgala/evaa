@@ -1,0 +1,11 @@
+.idea/
+*.pyc
+__pycache__/
+*.o
+*.elf
+*.hex
+.vscode
+*__pycache__
+tests/*.xml
+tests/*.html
+.idea

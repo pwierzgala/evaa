@@ -1,0 +1,589 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "EVAA DB",
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": true,
+        "max": true,
+        "min": true,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__time(time_column),\n  value1\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "temperature"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "measurements",
+          "timeColumn": "\"timestamp\"",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            },
+            {
+              "datatype": "varchar",
+              "name": "",
+              "params": [
+                "sensor_id",
+                "=",
+                "'temperature_da5aff28610417c1'"
+              ],
+              "type": "expression"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__time(time_column),\n  value1\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "temperature"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "measurements",
+          "timeColumn": "\"timestamp\"",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            },
+            {
+              "datatype": "varchar",
+              "name": "",
+              "params": [
+                "sensor_id",
+                "=",
+                "'res_1_wire_dev_1'"
+              ],
+              "type": "expression"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Temperature Sensors (1 Wire)",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": "Temperature [°C]",
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "EVAA DB",
+      "fill": 1,
+      "fillGradient": 1,
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 8,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": true,
+        "hideEmpty": false,
+        "hideZero": false,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "B Plant light enable",
+          "color": "#C4162A",
+          "yaxis": 2
+        },
+        {
+          "alias": "A Plant light duty",
+          "color": "#F2CC0C"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": true,
+      "targets": [
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "sensor_id",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__time(time_column),\n  value1\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "Plant light duty"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "measurements",
+          "timeColumn": "\"timestamp\"",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            },
+            {
+              "datatype": "varchar",
+              "name": "",
+              "params": [
+                "sensor_id",
+                "=",
+                "'plant_light_duty'"
+              ],
+              "type": "expression"
+            }
+          ]
+        },
+        {
+          "format": "table",
+          "group": [],
+          "metricColumn": "sensor_id",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__time(time_column),\n  value1\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+          "refId": "B",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              },
+              {
+                "params": [
+                  "Plant light enable"
+                ],
+                "type": "alias"
+              }
+            ]
+          ],
+          "table": "measurements",
+          "timeColumn": "\"timestamp\"",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            },
+            {
+              "datatype": "varchar",
+              "name": "",
+              "params": [
+                "sensor_id",
+                "=",
+                "'plant_light_enable'"
+              ],
+              "type": "expression"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Plant light",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "cumulative"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": "Light duty [%]",
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true
+        },
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": "Light enabled",
+          "logBase": 1,
+          "max": "1",
+          "min": "0",
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "content": "<style>\n.slidecontainer {\n  width: 250px;\n}\n\n.slider {\n  -moz-apeearance: none;\n  width: 100%;\n  height: 25px;\n  background: #282222;\n  box-shadow: 0px 0px 10px 2px #7f7f7f;\n  outline: none;\n  opacity: 0.7;\n  -webkit-transition: .2s;\n  -moz-transition: 2s;\n  transition: opacity .2s;\n  border-radius: 4px;\n}\n\n.slider:hover {\n  opacity: 1;\n}\n\n.slider::-moz-slider-thumb {\n  idth: 25px;\n  height: 25px;\n  background: #282222;\n  cursor: pointer;\n  border-radius: 4px;\n  \n  border:2px solid white;\n\tbox-sizing:border-box!important;\n}\n\n.slider::-moz-range-thumb {\n  width: 25px;\n  height: 25px;\n  cursor: pointer;\n}\n\n</style>\n\n<script>\n\nfunction send_rest_command(command) {\n  const Http = new XMLHttpRequest();\n  const server_ip = location.host.split(\":\", 1)[0];\n  const rest_api_port = '5000';\n  const url='http://' + server_ip + ':' + rest_api_port + command;\n  Http.open(\"GET\", url);\n  Http.send();\n}\n\nfunction plant_light_on() {\n  const rest_command = '/blue_light_intensity/0/20/';\n  send_rest_command(rest_command);\n}\n\nfunction plant_light_off() {\n  const rest_command = '/blue_light_intensity/0/0/';\n  send_rest_command(rest_command);\n}\n\nvar slider = document.getElementById(\"duty_slider\");\nvar output = document.getElementById(\"duty_val\");\n\noutput.innerHTML = slider.value;\n\nslider.oninput = function() {\n  output.innerHTML = this.value;\n}\n\nfunction set_duty() {\n  \n  const rest_command = '/blue_light_intensity/0/' + slider.value + '/';\n  send_rest_command(rest_command);\n}\n\n</script>\n\n<center>\n\n<h1>Plant Light</h1>\n\n<h4>\n<button onClick=\"plant_light_on();\" style=\"border-color:green; background: #282222; border-radius: 4px; margin-top:15px;\">ON</button>\n<button onClick=\"plant_light_off();\" style=\"border-color:red; background: #282222; border-radius: 4px; margin-top:15px;\">OFF</button>\n</h4>\n\n<h4>\n<div class=\"slidecontainer\">\n  <input type=\"range\" min=\"0\" max=\"100\" value=\"50\" class=\"slider\" id=\"duty_slider\" onmouseup=\"set_duty();\" ontouchend=\"set_duty();\" style=\"border-radius: 4px; margin-top:15px;\">\n  <p style=\"margin-top:15px;\">Duty: <span id=\"duty_val\"></span> [%]</p>\n</div>\n</h4>\n\n</center>",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 0,
+        "y": 12
+      },
+      "id": 6,
+      "links": [],
+      "mode": "html",
+      "options": {},
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__time(time_column),\n  value1\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "timeColumn": "time",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Plant Light Panel",
+      "type": "text"
+    },
+    {
+      "content": "<script>\nfunction send_rest_command(command) {\n  const Http = new XMLHttpRequest();\n  const server_ip = location.host.split(\":\", 1)[0];\n  const rest_api_port = '5000';\n  const url='http://' + server_ip + ':' + rest_api_port + command;\n  Http.open(\"GET\", url);\n  Http.send();\n}\n\nfunction lift_up() {\n  const rest_command = '/light_height/0/65280/';\n  send_rest_command(rest_command);\n}\n\nfunction lift_down() {\n  const rest_command = '/light_height/0/65535/';\n  send_rest_command(rest_command);\n}\n\nfunction lift_stop() {\n  const rest_command = '/light_height/0/0/';\n  send_rest_command(rest_command);\n}\n</script>\n\n<center>\n  <h1>Elevator</h1>\n  <br>\n  <h2>\n    <button id=\"move_up\" onClick=lift_up() style=\"color: white; width: 50px; background: #282222; border-radius: 4px;\">&#8593;</button>\n    <br>\n    <button id=\"move_stop\" onClick=lift_stop() style=\"color: white; width: 50px; background: #282222; border-radius: 4px;\">Stop</button>\n    <br>\n    <button id=\"move_down\" onClick=lift_down() style=\"color: white; width: 50px; background: #282222; border-radius: 4px;\">&#8595;</button>\n    <br>\n  </h2>\n</center>\n\n\n\n\n\n\n",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 6,
+        "y": 12
+      },
+      "id": 10,
+      "mode": "markdown",
+      "options": {},
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Elevator Panel",
+      "type": "text"
+    },
+    {
+      "datasource": "EVAA DB",
+      "description": "",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 12,
+        "y": 12
+      },
+      "id": 4,
+      "options": {
+        "fieldOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "defaults": {
+            "mappings": [],
+            "max": 100,
+            "min": 0,
+            "thresholds": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 80
+              },
+              {
+                "color": "red",
+                "value": 90
+              }
+            ],
+            "unit": "degree"
+          },
+          "override": {},
+          "values": false
+        },
+        "orientation": "horizontal",
+        "showThresholdLabels": true,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "6.3.3",
+      "targets": [
+        {
+          "format": "time_series",
+          "group": [],
+          "metricColumn": "none",
+          "rawQuery": false,
+          "rawSql": "SELECT\n  $__time(time_column),\n  value1\nFROM\n  metric_table\nWHERE\n  $__timeFilter(time_column)\n",
+          "refId": "A",
+          "select": [
+            [
+              {
+                "params": [
+                  "value"
+                ],
+                "type": "column"
+              }
+            ]
+          ],
+          "table": "measurements",
+          "timeColumn": "\"timestamp\"",
+          "timeColumnType": "timestamp",
+          "where": [
+            {
+              "name": "$__timeFilter",
+              "params": [],
+              "type": "macro"
+            },
+            {
+              "datatype": "varchar",
+              "name": "",
+              "params": [
+                "sensor_id",
+                "=",
+                "'temperature_da5aff28610417c1'"
+              ],
+              "type": "expression"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Temperature Panel",
+      "type": "gauge"
+    },
+    {
+      "content": "<style>\n\n.pump_id_text {\n  -webkit-appearance: none;\n  width: 100px;\n  min-height: 27px;\n  background: #282222;\n  box-shadow: 0px 0px 5px 5px #7f7f7f;\n  outline: none;\n  opacity: 0.7;\n  -webkit-transition: .2s;\n  transition: opacity .2s;\n  border-radius: 4px;\n  margin-right: 10px;\n  text-align: center;\n}\n\n</style>\n\n<script>\nfunction send_rest_command(command) {\n  const Http = new XMLHttpRequest();\n  const server_ip = location.host.split(\":\", 1)[0];\n  const rest_api_port = '5000';\n  const url='http://' + server_ip + ':' + rest_api_port + command;\n  Http.open(\"GET\", url);\n  Http.send();\n}\n\nvar pump_id = document.getElementById(\"pump_id_input\");\n\nfunction pump_start() {\n  const rest_command = '/pump_start/' + pump_id.value + '/';\n  send_rest_command(rest_command);\n}\n\nfunction pump_stop() {\n  const rest_command = '/pump_stop/' + pump_id.value + '/';\n  send_rest_command(rest_command);\n}\n\n</script>\n\n<center>\n<h1>Pumps</h1>\n<br>\n<div>\n  <input id=\"pump_id_input\" type=\"number\" class=\"pump_id_text\" name=\"PumpID\" placeholder=\"Pump ID\">\n  <button id=\"pump_start\" onClick=pump_start() style=\"color: white; width: 50px; background: #282222; border-radius: 4px; border-color: green\">Start</button> \n  <button id=\"pump_stop\" onClick=pump_stop() style=\"color: white; width: 50px; background: #282222; border-radius: 4px; border-color: red\">Stop</button>\n</div>\n</center>\n\n\n\n\n\n\n\n\n\n",
+      "gridPos": {
+        "h": 6,
+        "w": 6,
+        "x": 18,
+        "y": 12
+      },
+      "id": 12,
+      "mode": "markdown",
+      "options": {},
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Pump Panel",
+      "type": "text"
+    },
+    {
+      "cacheTimeout": null,
+      "content": "<style>\n  .Button_look \n  { \n    text-align    : center; \n    border-radius : 4px;\n    border-color  : green;\n    background    : #282222;\n    margin-top    : 15px\n  } \n</style>\n\n<script>\nfunction send_rest_command(command) \n{\n  const Http = new XMLHttpRequest();\n  const server_ip = location.host.split(\":\", 1)[0];\n  const rest_api_port = '5000';\n  const url='http://' + server_ip + ':' + rest_api_port + command;\n  Http.open(\"GET\", url);\n  Http.send();\n}\n\nfunction swap_led_strip()\n{\n   var elem = document.getElementById(\"led_button_1\");\n   \n   if (elem.innnerHTML == \"ON\")\n   {\n     elem.innnerHTML = \"OFF\";\n     elem.innerText = \"OFF\";\n     elem.style.borderColor=\"red\";\n     const rest_command = '/set_relay_state/0/1/';\n     send_rest_command(rest_command);\n   }\n   else\n   {\n     elem.innnerHTML = \"ON\";\n     elem.innerText = \"ON\";\n     elem.style.borderColor=\"green\";\n     const rest_command = '/set_relay_state/0/0/';\n     send_rest_command(rest_command);\n   }\n}\n\nfunction get_led_strip_state()\n{\n\n}\n</script>\n\n<center>\n<h1>LED Strip</h1>\n<h4>\n<button class=\"Button_look\" type=\"button\" onClick=\"swap_led_strip()\" id=\"led_button_1\">ON</button>\n</h4>\n</center>\n\n\n",
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 18
+      },
+      "id": 14,
+      "links": [],
+      "mode": "markdown",
+      "options": {},
+      "pluginVersion": "6.3.3",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "LED Strip Panel",
+      "type": "text"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 19,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "2019-08-22T13:19:40.982Z",
+    "to": "2019-08-22T13:21:22.822Z"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "Evaa Dashboard",
+  "uid": "4P5ld6dWz",
+  "version": 137
+}
