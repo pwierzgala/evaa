@@ -1,0 +1,110 @@
+|stepmot
+reset => reset~0.IN1
+dir => dir~0.IN1
+mode => mode~0.IN1
+move => move~0.IN1
+phaseout[0] <= stepper:s1.phaseout
+phaseout[1] <= stepper:s1.phaseout
+phaseout[2] <= stepper:s1.phaseout
+phaseout[3] <= stepper:s1.phaseout
+
+
+|stepmot|ufmclk:ufmclk1
+oscena => oscena~0.IN1
+osc <= ufmclk_altufm_osc_7p3:ufmclk_altufm_osc_7p3_component.osc
+
+
+|stepmot|ufmclk:ufmclk1|ufmclk_altufm_osc_7p3:ufmclk_altufm_osc_7p3_component
+osc <= maxii_ufm_block1.OSC
+oscena => maxii_ufm_block1.OSCENA
+
+
+|stepmot|divider:d1
+osc => count[16].CLK
+osc => count[15].CLK
+osc => count[14].CLK
+osc => count[13].CLK
+osc => count[12].CLK
+osc => count[11].CLK
+osc => count[10].CLK
+osc => count[9].CLK
+osc => count[8].CLK
+osc => count[7].CLK
+osc => count[6].CLK
+osc => count[5].CLK
+osc => count[4].CLK
+osc => count[3].CLK
+osc => count[2].CLK
+osc => count[1].CLK
+osc => count[0].CLK
+osc => clk~reg0.CLK
+clk <= clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|stepmot|stepper:s1
+clk => phaseout[3]~reg0.CLK
+clk => phaseout[2]~reg0.CLK
+clk => phaseout[1]~reg0.CLK
+clk => phaseout[0]~reg0.CLK
+reset => position[0].ACLR
+reset => position[1].ACLR
+reset => position[2].ACLR
+reset => position[3].ACLR
+reset => phaseout[3]~reg0.ACLR
+reset => phaseout[2]~reg0.PRESET
+reset => phaseout[1]~reg0.PRESET
+reset => phaseout[0]~reg0.PRESET
+reset => position[0].ENA
+reset => position[3].ENA
+reset => position[2].ENA
+reset => position[1].ENA
+dir => Mux7.IN6
+dir => Mux6.IN6
+dir => Mux6.IN7
+dir => Mux5.IN6
+dir => Mux5.IN7
+dir => Mux4.IN6
+dir => Mux4.IN7
+dir => Mux7.IN7
+dir => Mux3.IN6
+dir => Mux2.IN6
+dir => Mux2.IN7
+dir => Mux1.IN6
+dir => Mux1.IN7
+dir => Mux0.IN6
+dir => Mux0.IN7
+dir => Mux3.IN7
+dir => Mux3.IN4
+dir => Mux3.IN5
+dir => Mux7.IN4
+dir => Mux7.IN5
+dir => Mux2.IN4
+dir => Mux2.IN5
+dir => Mux6.IN4
+dir => Mux6.IN5
+dir => Mux1.IN4
+dir => Mux1.IN5
+dir => Mux5.IN4
+dir => Mux5.IN5
+dir => Mux0.IN4
+dir => Mux0.IN5
+dir => Mux4.IN4
+dir => Mux4.IN5
+mode => phaseout~7.OUTPUTSELECT
+mode => phaseout~6.OUTPUTSELECT
+mode => phaseout~5.OUTPUTSELECT
+mode => phaseout~4.OUTPUTSELECT
+move => position[0].CLK
+move => position[1].CLK
+move => position[2].CLK
+move => position[3].CLK
+move => phaseout~3.OUTPUTSELECT
+move => phaseout~2.OUTPUTSELECT
+move => phaseout~1.OUTPUTSELECT
+move => phaseout~0.OUTPUTSELECT
+phaseout[0] <= phaseout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phaseout[1] <= phaseout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phaseout[2] <= phaseout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phaseout[3] <= phaseout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

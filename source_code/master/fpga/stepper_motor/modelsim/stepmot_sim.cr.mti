@@ -1,0 +1,83 @@
+stepmot.v {1 {vlog -work work stepmot.v
+Model Technology ModelSim ALTERA vlog 6.1g Compiler 2006.08 Aug 12 2006
+-- Compiling module stepmot
+-- Compiling module stepper
+-- Compiling module ufmclk_altufm_osc_7p3
+-- Compiling module ufmclk
+-- Compiling module divider
+
+Top level modules:
+	stepmot
+
+} {} {}} {D:/sm/stepper motor/modelsim/stepmot.v} {1 {vlog -work work {D:/sm/stepper motor/modelsim/stepmot.v}
+Model Technology ModelSim ALTERA vlog 6.1d Compiler 2006.01 Jan 23 2006
+-- Compiling module stepmot
+-- Compiling module stepper
+-- Compiling module ufmclk_altufm_osc_7p3
+-- Compiling module ufmclk
+-- Compiling module divider
+
+Top level modules:
+	stepmot
+
+} {} {}} C:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v {1 {vlog -work work C:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+Model Technology ModelSim ALTERA vlog 6.1g Compiler 2006.08 Aug 12 2006
+-- Compiling UDP MAXII_PRIM_DFFE
+-- Compiling module maxii_dffe
+-- Compiling module maxii_latch
+-- Compiling module maxii_mux21
+-- Compiling module maxii_mux41
+-- Compiling module maxii_and1
+-- Compiling module maxii_and16
+-- Compiling module maxii_bmux21
+-- Compiling module maxii_b17mux21
+-- Compiling module maxii_nmux21
+-- Compiling module maxii_b5mux21
+-- Compiling module maxii_jtag
+-- Compiling module maxii_crcblock
+-- Compiling module maxii_asynch_lcell
+-- Compiling module maxii_lcell_register
+-- Compiling module maxii_lcell
+-- Compiling module maxii_ufm
+-- Compiling module maxii_io
+-- Compiling module maxii_routing_wire
+
+Top level modules:
+	maxii_dffe
+	maxii_latch
+	maxii_mux21
+	maxii_mux41
+	maxii_and1
+	maxii_and16
+	maxii_bmux21
+	maxii_b17mux21
+	maxii_nmux21
+	maxii_b5mux21
+	maxii_jtag
+	maxii_crcblock
+	maxii_lcell
+	maxii_ufm
+	maxii_io
+	maxii_routing_wire
+
+} {} {}} test_stepmot.v {1 {vlog -work work test_stepmot.v
+Model Technology ModelSim ALTERA vlog 6.1g Compiler 2006.08 Aug 12 2006
+-- Compiling module test_stepmot
+-- Compiling module ufmclk_altufm_osc_7p3
+-- Compiling module ufmclk
+-- Compiling module divider1
+
+Top level modules:
+	test_stepmot
+
+} {} {}} {D:/sm/stepper motor/modelsim/test_stepmot.v} {1 {vlog -work work {D:/sm/stepper motor/modelsim/test_stepmot.v}
+Model Technology ModelSim ALTERA vlog 6.1d Compiler 2006.01 Jan 23 2006
+-- Compiling module test_stepmot
+-- Compiling module ufmclk_altufm_osc_7p3
+-- Compiling module ufmclk
+-- Compiling module divider1
+
+Top level modules:
+	test_stepmot
+
+} {} {}}

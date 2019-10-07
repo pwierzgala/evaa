@@ -1,0 +1,162 @@
+# Reading C:/altera/72_cc/modelsim_ae/tcl/vsim/pref.tcl 
+#  OpenFile "D:/Altera/MAXIIZ update/Design example/AN488/modelsim/stepmot_sim.mpf" 
+# Loading project stepmot_sim
+vsim -gui work.test_stepmot
+# vsim -gui work.test_stepmot 
+# //  ModelSim ALTERA 6.1g Aug 12 2006 
+# //
+# //  Copyright 2006 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.test_stepmot
+# Loading work.stepmot
+# Loading work.ufmclk
+# ** Warning: (vsim-3010) [TSCALE] - Module 'ufmclk' has a `timescale directive in effect, but previous modules do not.
+#         Region: /test_stepmot/s1_t/ufmclk1
+# Loading work.ufmclk_altufm_osc_7p3
+# Loading work.maxii_ufm
+# Loading work.divider
+# Loading work.stepper
+# ** Warning: (vsim-3009) [TSCALE] - Module 'stepper' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /test_stepmot/s1_t/s1
+# Loading work.divider1
+add wave /*
+run -all
+# Simulation period:                   0,       Test vector:xxxx,        Test phase:xxxx
+# Info : UFM oscillator can operate at any frequency between 3.33MHz to 5.56Mhz.
+# Info : UFM oscillator can operate at any frequency between 3.33MHz to 5.56Mhz.
+# Simulation period:              180000,       Test vector:0011,        Test phase:0111
+# Output Verified
+# Simulation period:         23592960000,       Test vector:1011,        Test phase:0111
+# Simulation period:         35389440000,       Test vector:1011,        Test phase:0011
+# Output Verified
+# Simulation period:         58982400000,       Test vector:1011,        Test phase:1011
+# Output Verified
+# Simulation period:         82575360000,       Test vector:1011,        Test phase:1001
+# Output Verified
+# Simulation period:        106168320000,       Test vector:1011,        Test phase:1101
+# Output Verified
+# Simulation period:        129761280000,       Test vector:1011,        Test phase:1100
+# Output Verified
+# Simulation period:        153354240000,       Test vector:1011,        Test phase:1110
+# Output Verified
+# Simulation period:        176947200000,       Test vector:1011,        Test phase:0110
+# Output Verified
+# Simulation period:        200540160000,       Test vector:1011,        Test phase:0111
+# Output Verified
+# Simulation period:        212336640000,       Test vector:1001,        Test phase:0111
+# Simulation period:        224133120000,       Test vector:1001,        Test phase:0110
+# Output Verified
+# Simulation period:        247726080000,       Test vector:1001,        Test phase:1110
+# Output Verified
+# Simulation period:        271319040000,       Test vector:1001,        Test phase:1100
+# Output Verified
+# Simulation period:        294912000000,       Test vector:1001,        Test phase:1101
+# Output Verified
+# Simulation period:        318504960000,       Test vector:1001,        Test phase:1001
+# Output Verified
+# Simulation period:        342097920000,       Test vector:1001,        Test phase:1011
+# Output Verified
+# Simulation period:        365690880000,       Test vector:1001,        Test phase:0011
+# Output Verified
+# Simulation period:        389283840000,       Test vector:1001,        Test phase:0111
+# Output Verified
+# Simulation period:        401080320000,       Test vector:1111,        Test phase:0111
+# Output Verified
+# Simulation period:        424673280000,       Test vector:1110,        Test phase:0111
+# Simulation period:        436469760000,       Test vector:1110,        Test phase:0011
+# Output Verified
+# Simulation period:        448266240000,       Test vector:1111,        Test phase:0011
+# Output Verified
+# Simulation period:        471859200000,       Test vector:1110,        Test phase:0011
+# Simulation period:        483655680000,       Test vector:1110,        Test phase:1011
+# Output Verified
+# Simulation period:        495452160000,       Test vector:1111,        Test phase:1011
+# Output Verified
+# Simulation period:        519045120000,       Test vector:1110,        Test phase:1011
+# Simulation period:        530841600000,       Test vector:1110,        Test phase:1001
+# Output Verified
+# Simulation period:        542638080000,       Test vector:1111,        Test phase:1001
+# Output Verified
+# Simulation period:        566231040000,       Test vector:1110,        Test phase:1001
+# Simulation period:        578027520000,       Test vector:1110,        Test phase:1101
+# Output Verified
+# Simulation period:        589824000000,       Test vector:1111,        Test phase:1101
+# Output Verified
+# Simulation period:        613416960000,       Test vector:1110,        Test phase:1101
+# Simulation period:        625213440000,       Test vector:1110,        Test phase:1100
+# Output Verified
+# Simulation period:        637009920000,       Test vector:1111,        Test phase:1100
+# Output Verified
+# Simulation period:        660602880000,       Test vector:1110,        Test phase:1100
+# Simulation period:        672399360000,       Test vector:1110,        Test phase:1110
+# Output Verified
+# Simulation period:        684195840000,       Test vector:1111,        Test phase:1110
+# Output Verified
+# Simulation period:        707788800000,       Test vector:1110,        Test phase:1110
+# Simulation period:        719585280000,       Test vector:1110,        Test phase:0110
+# Output Verified
+# Simulation period:        731381760000,       Test vector:1111,        Test phase:0110
+# Output Verified
+# Simulation period:        754974720000,       Test vector:1110,        Test phase:0110
+# Simulation period:        766771200000,       Test vector:1110,        Test phase:0111
+# Output Verified
+# Simulation period:        778567680000,       Test vector:1111,        Test phase:0111
+# Output Verified
+# Simulation period:        802160640000,       Test vector:1110,        Test phase:0111
+# Simulation period:        813957120000,       Test vector:1110,        Test phase:0011
+# Output Verified
+# Simulation period:        825753600000,       Test vector:1101,        Test phase:0011
+# Output Verified
+# Simulation period:        849346560000,       Test vector:1100,        Test phase:0011
+# Simulation period:        861143040000,       Test vector:1100,        Test phase:0111
+# Output Verified
+# Simulation period:        872939520000,       Test vector:1101,        Test phase:0111
+# Output Verified
+# Simulation period:        896532480000,       Test vector:1100,        Test phase:0111
+# Simulation period:        908328960000,       Test vector:1100,        Test phase:0110
+# Output Verified
+# Simulation period:        920125440000,       Test vector:1101,        Test phase:0110
+# Output Verified
+# Simulation period:        943718400000,       Test vector:1100,        Test phase:0110
+# Simulation period:        955514880000,       Test vector:1100,        Test phase:1110
+# Output Verified
+# Simulation period:        967311360000,       Test vector:1101,        Test phase:1110
+# Output Verified
+# Simulation period:        990904320000,       Test vector:1100,        Test phase:1110
+# Simulation period:       1002700800000,       Test vector:1100,        Test phase:1100
+# Output Verified
+# Simulation period:       1014497280000,       Test vector:1101,        Test phase:1100
+# Output Verified
+# Simulation period:       1038090240000,       Test vector:1100,        Test phase:1100
+# Simulation period:       1049886720000,       Test vector:1100,        Test phase:1101
+# Output Verified
+# Simulation period:       1061683200000,       Test vector:1101,        Test phase:1101
+# Output Verified
+# Simulation period:       1085276160000,       Test vector:1100,        Test phase:1101
+# Simulation period:       1097072640000,       Test vector:1100,        Test phase:1001
+# Output Verified
+# Simulation period:       1108869120000,       Test vector:1101,        Test phase:1001
+# Output Verified
+# Simulation period:       1132462080000,       Test vector:1100,        Test phase:1001
+# Simulation period:       1144258560000,       Test vector:1100,        Test phase:1011
+# Output Verified
+# Simulation period:       1156055040000,       Test vector:1101,        Test phase:1011
+# Output Verified
+# Simulation period:       1179648000000,       Test vector:1100,        Test phase:1011
+# Simulation period:       1191444480000,       Test vector:1100,        Test phase:0011
+# Output Verified
+# Simulation period:       1203240960000,       Test vector:1101,        Test phase:0011
+# Output Verified
+# Simulation period:       1226833920000,       Test vector:1100,        Test phase:0011
+# Simulation period:       1238630400000,       Test vector:1100,        Test phase:0111
+# Output Verified
+# Simulation period:       1250426880000,       Test vector:1101,        Test phase:0111
+# Output Verified
+# ALL TESTS PASSED
+# Break at test_stepmot.v line 598

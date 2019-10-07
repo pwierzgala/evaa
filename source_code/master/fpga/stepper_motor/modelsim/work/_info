@@ -1,0 +1,343 @@
+m255
+13
+cModel Technology
+dD:\download
+vdivider
+IiF`XG<cgSmHZ6WnTOR`R]2
+VZHeXfXc5gJHSCaL]>fdcD1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167381502
+Fstepmot.v
+L0 227
+VZHeXfXc5gJHSCaL]>fdcD1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vdivider1
+IEzCk0[JSaabGiVcO593iz1
+VNC1_]OGf7[M@oQD_g8oD72
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167393432
+Ftest_stepmot.v
+L0 688
+VNC1_]OGf7[M@oQD_g8oD72
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_and1
+I=Ml_W<fhHoHf26ZYVi2dd3
+V]O:mP5doEiJ5bi=S37AzQ3
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 270
+V]O:mP5doEiJ5bi=S37AzQ3
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_and16
+Id]ONYi3c>4MoSDB=S6YWK0
+V1kG6?nM6T9GiAQDz^cGz<1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 283
+V1kG6?nM6T9GiAQDz^cGz<1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_asynch_lcell
+I5MPeNcf87^[2Oh@Y[NE>F0
+Ve8n2LX:Zb=EKaL87aDFFC1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 443
+Ve8n2LX:Zb=EKaL87aDFFC1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_b17mux21
+IOf2K`S4[`JAaXhRKJKJ7S1
+VTiS2V565DUfkJb11diQdE1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 323
+VTiS2V565DUfkJb11diQdE1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_b5mux21
+Ie7oC8jm3Ci4AfXR>U;g0@1
+V>I^=0BbC0E:TLPI4Wf0c:3
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 344
+V>I^=0BbC0E:TLPI4Wf0c:3
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_bmux21
+In4mjL247?_U3`CO=i?lJM2
+VDZo9aA61;`^M=MAm9;1Y[3
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 312
+VDZo9aA61;`^M=MAm9;1Y[3
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_crcblock
+IQjMR?6FGbIfPhmQd^jMZh0
+VnO@4lF2iV>cKOe5GHf?F^0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 412
+VnO@4lF2iV>cKOe5GHf?F^0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_dffe
+ICc0A2hKm8dP6Ff<MlVSOi1
+VeG58dV2IEFzSNSL`2`Nza0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 95
+VeG58dV2IEFzSNSL`2`Nza0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_io
+I_T`A2lF86d1EU<:XSC?^g2
+VBCgzmgj2@<9PIOOenie[^0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 1523
+VBCgzmgj2@<9PIOOenie[^0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_jtag
+I:5R=cLnbV4gLTgT8`F32N1
+VCA@;ii4QH4IT1^Pm_7W5B2
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 365
+VCA@;ii4QH4IT1^Pm_7W5B2
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_latch
+IQZzMfj3NB8d=cbKDX9YL13
+V[QP:a=1V@IODOX>BOi@9O1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 144
+V[QP:a=1V@IODOX>BOi@9O1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_lcell
+IWzTb5e[8ULn>mCBGSMknT1
+VoN0i^lm3SDKSg04lJ>DaG3
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 1002
+VoN0i^lm3SDKSg04lJ>DaG3
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_lcell_register
+I`0a]S<KPH=oEjehYzj]UL2
+VXiG?R6RR:^01bXA_B_d_P0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 801
+VXiG?R6RR:^01bXA_B_d_P0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_mux21
+In1R7;hB3YLZJ4TVSLcD2L1
+VCRi2QdkPhn47UokgKA>hj3
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 202
+VCRi2QdkPhn47UokgKA>hj3
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_mux41
+I9dVJ?<PI;W5aT:zR]P>6d3
+VefXD2g[gCQdC5cDcCYm_h1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 229
+VefXD2g[gCQdC5cDcCYm_h1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_nmux21
+IGDo=GUcFOZfzo7GSJ2;UJ1
+VkOLgb`^j]BY]K@F=40V1P1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 334
+VkOLgb`^j]BY]K@F=40V1P1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+UMAXII_PRIM_DFFE
+ITnlbEXfCKg1cH4HX6ZTD`3
+Vn^z_FZVjW4Yig8kWFJO_R2
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 22
+Vn^z_FZVjW4Yig8kWFJO_R2
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+n@m@a@x@i@i_@p@r@i@m_@d@f@f@e
+vmaxii_routing_wire
+I;e=;7ooDVDWafPR=2jCaR3
+V^__6Z8;0GI949iU?onfJl3
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 1713
+V^__6Z8;0GI949iU?onfJl3
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vmaxii_ufm
+Iz2D59:7z>^eOf[hEWNhEY0
+VQ=>FieK[H11Cj;F@mn1aJ1
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1194447976
+FC:/altera/72sp1/quartus/eda/sim_lib/maxii_atoms.v
+L0 1129
+VQ=>FieK[H11Cj;F@mn1aJ1
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vstepmot
+IPB6]V`AO9mh5MdDfcfDD60
+Vcg<]?bUeI^HDH6Kh?FgIn0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167381502
+Fstepmot.v
+L0 8
+Vcg<]?bUeI^HDH6Kh?FgIn0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vstepper
+I^f3F:_X0:[;fQ2XiE;blE0
+VBD5=i6b:JDTGRc?Dj@Vi_2
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167381502
+Fstepmot.v
+L0 36
+VBD5=i6b:JDTGRc?Dj@Vi_2
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vtest_stepmot
+IFHh5zb0>PIKPo4b8L_EG`1
+Vl8>BefPn8k@hSBefi<8KN0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167393432
+Ftest_stepmot.v
+L0 7
+Vl8>BefPn8k@hSBefi<8KN0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vufmclk
+ITRWoez^95<ZTEc`7Ycd3`3
+V9M[GE`iNV=l:oNgQ:4hzK2
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167393432
+Ftest_stepmot.v
+L0 667
+V9M[GE`iNV=l:oNgQ:4hzK2
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000
+vufmclk_altufm_osc_7p3
+Iam?D]9:kge7X8k]z^dLj_0
+Vf[nBalJ`dj?ETG;bd]klT0
+dD:\Altera\MAXIIZ update\Design example\AN488\modelsim
+w1167393432
+Ftest_stepmot.v
+L0 612
+Vf[nBalJ`dj?ETG;bd]klT0
+OV;L;6.1g;31
+r1
+31
+o-work work -O0
+tGenerateLoopIterationMax 100000

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at stepmot.v(43): Always Construct contains both blocking and non-blocking assignments
